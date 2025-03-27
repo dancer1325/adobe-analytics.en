@@ -7,39 +7,55 @@ role: Admin, Developer, Leader
 ---
 # Create a data layer
 
-A data layer is a framework of JavaScript objects on your site that contain the variable values used in your Analytics implementation. It allows greater control and easier maintenance when assigning values to Analytics variables.
+* data layer
+  * 💡:= framework of JavaScript objects | your site 💡/
+    * contain the variable values -- used -- | YOUR Analytics implementation
+    * allows
+      * | assigning values | Analytics variables
+        * greater control
+        * easier maintenance 
+    * extensible
+      * == if you have organization's requirements specific -> include objects | your data layer
 
 ## Prerequisites
 
-[Create a solution design document](solution-design.md) - It is important for your organization to align on tracking requirements. Make sure that you are prepared with a solution design document before approaching development teams in your organization.
+* [Create a solution design document](solution-design.md) 
+  * == align on tracking requirements
 
-## Workflow
+## Steps
 
-Implementing Adobe Analytics using a data layer typically follows these steps:
-
-1. **Work with your site development team to implement a data layer**: Your site development team is primarily responsible for making sure the data layer object populates with correct values. Review this page with your site development team to make sure expectations are aligned between teams.
-
-   >[!NOTE]
-   >
-   >Following Adobe's recommended data layer specifications is optional. If you already have a data layer, or otherwise choose not to follow Adobe's specifications, make sure that your organization aligns on what specification to follow.
-
-1. **Validate your data layer using a browser console**: Once a data layer is created, you can validate that it is working using any browser's developer console. You can open the developer console in most browsers using the `F12` key. An example variable value would be `adobeDataLayer.page.title`.
-1. **Use Adobe Experience Platform Data Collection to map data layer objects to data elements**: This step varies based on your organization's implementation method:
-   * **If using the Web SDK**: Map the desired data layer objects to the desired XDM fields in Adobe Experience Platform Edge. See [Analytics XDM variable mapping](../aep-edge/xdm-var-mapping.md) to determine the desired data layer mapping.
-   * **If using the Analytics extension**: Create data elements under Tags in Adobe Experience Platform Data Collection, and assign them to the desired data layer objects. Then within the Analytics extension, assign each data element to the appropriate Analytics variable.
+1. implement a data layer 
+   1. site development team's responsibility
+      1. data layer object -- is populated with -- correct values 
+   2. Review this page with your site development team to make sure expectations are aligned between teams.
+2. validate your data layer 
+   1. -- via -- browser's developer console 
+      1. _Example:_ `adobeDataLayer.page.title`
+3. map data layer objects -- , via Adobe Experience Platform Data Collection, to -- data elements
+   1. based on your organization's implementation method
+      1. if you use Web SDK
+         1. map the desired data layer objects -- to the -- Adobe Experience Platform Edge's desired XDM fields  
+         2. see [Analytics XDM variable mapping](../aep-edge/xdm-var-mapping.md)
+      2. if you use the Analytics extension
+         1. create data elements /
+            1. under Tags | Adobe Experience Platform Data Collection
+            2. -- assign them to the -- desired data layer objects
+         2. | Analytics extension, assign EACH data element -- to the -- appropriate Analytics variable
 
 ## Specifications
 
-Adobe recommends using the [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki) for new or restructured implementations.
-
-Your organization is free to use other data layer specifications, such as the [Customer Experience Digital Data Layer](https://www.w3.org/2013/12/ceddl-201312.pdf), or another custom specification entirely. Aligning to a consistent data layer that meets your organization's needs is the most important.
-
-Data layers are extensible; if you have requirements specific to your organization, you can include objects in your data layer to accommodate those needs.
+* recommendations
+  * use [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
+    * ALTERNATIVES to Adobe Client Data Layer
+      * [Customer Experience Digital Data Layer](https://www.w3.org/2013/12/ceddl-201312.pdf),
 
 ## Setting data layer values
 
-Data layers typically generate server-side, referencing the same objects used to build the site content. Establish the site's data layer based on tracking requirements set in your organization's [solution design document](solution-design.md).
+* Data layers
+  * -- typically generate -- server-side / 
+    * objects referenced == objects -- used to build the -- site content
+* site's data layer -- MUST be established, based on -- tracking requirements / set | your organization's [solution design document](solution-design.md)
 
 ## Next steps
 
-[Map data layer objects to data elements](../launch/layer-to-elements.md): Use your site's data layer in Adobe Experience Platform.
+* [Map data layer objects | data elements](../launch/layer-to-elements.md)
