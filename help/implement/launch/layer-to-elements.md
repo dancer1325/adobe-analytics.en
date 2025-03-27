@@ -5,17 +5,23 @@ feature: Tags
 exl-id: b7594084-cb5f-408e-8a76-0a0815cc7553
 role: Admin, Developer
 ---
-# Map data layer objects to data elements
+# Map data layer objects -- to -- data elements
 
-Once your organization has established and implemented a data layer on your site, you can map data layer objects to data elements within tags.
+* use case
+  * your organization -- has -- established & implemented a data layer | your site
 
 ## Prerequisites
 
-[Create a data layer](../prepare/data-layer.md): Make sure a data layer exists on your site. While you technically can map any JavaScript object or scrape CSS elements directly from the page, Adobe recommends this practice as a last resort. If your site layout changes, the CSS selectors used in tags stop working, causing data loss.
+* [Create a data layer | your site](../prepare/data-layer.md) 
+  * ALTERNATIVES / NOT recommended
+    * map ANY JavaScript object OR scrape CSS elements DIRECTLY | page
+    * Reason: 🧠if your site layout changes -> CSS selectors / used | tags stop working -> data loss 🧠
 
-## Use tags to create data elements
+## Use tags -- to create -- data elements
 
-[Data elements](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html) are components in Adobe Experience Platform Data Collection that you can use across the tool. You can assign variable values in the Adobe Analytics extension using data elements.
+* TODO:
+[Data elements](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html) are components in Adobe Experience Platform Data Collection that you can use across the tool. 
+You can assign variable values in the Adobe Analytics extension using data elements.
 
 1. Log in to [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) using your AdobeID credentials.
 1. Click the desired tag property.
@@ -23,10 +29,14 @@ Once your organization has established and implemented a data layer on your site
 
     ![create data element](assets/createelement.png)
 
-1. Enter a name for your data element. It can be a simple label that corresponds to a JavaScript variable in your data layer that you want to track.
+1. Enter a name for your data element. 
+   1. It can be a simple label that corresponds to a JavaScript variable in your data layer that you want to track.
 1. Under the **[!UICONTROL Extension]** drop-down list, select **[!UICONTROL Core]**.
-1. Under the **[!UICONTROL Data Element Type]** drop-down list, select **[!UICONTROL JavaScript Variable]**. A text field appears to the right that allows you to enter the JavaScript variable to map to this data element.
-1. Enter the desired Javascript variable, typically within your data layer. For example, if your organization's data layer closely matches Adobe's recommended practice, a value could be `digitalData.page.pageInfo.pageName`. You can use your browser's console to validate JavaScript variable syntax and values.
+1. Under the **[!UICONTROL Data Element Type]** drop-down list, select **[!UICONTROL JavaScript Variable]**. 
+   1. A text field appears to the right that allows you to enter the JavaScript variable to map to this data element.
+1. Enter the desired Javascript variable, typically within your data layer. 
+   1. For example, if your organization's data layer closely matches Adobe's recommended practice, a value could be `digitalData.page.pageInfo.pageName`. 
+   2. You can use your browser's console to validate JavaScript variable syntax and values.
 1. Click **[!UICONTROL Save]**.
 
 ## Next steps
