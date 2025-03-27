@@ -5,17 +5,18 @@ feature: Tags
 exl-id: 324943db-cb0b-40b1-8884-56bb3f608278
 role: Admin, Developer
 ---
-# Deploy an Analytics implementation to a development environment
-
-Once you have created and configured a tag property, the libraries are ready to be deployed and code implemented on your site.
+# Deploy an Analytics implementation | development environment
 
 ## Prerequisites
 
-[Create and configure a tag property for Adobe Analytics](create-analytics-property.md): Access the tool and create a space for your Analytics implementation.
+* [Create & configure a tag property | Adobe Analytics](create-analytics-property.md)
 
-## Create adapters and environments
+## Create adapters & environments
 
-Tags accommodates many organizational workflows in deploying code. Follow these steps to create the minimum necessary components for an Analytics implementation. As a tag admin, you can work within your organization to establish the correct workflow for deploying Adobe solutions.
+* TODO:
+Tags accommodates many organizational workflows in deploying code. 
+Follow these steps to create the minimum necessary components for an Analytics implementation. 
+As a tag admin, you can work within your organization to establish the correct workflow for deploying Adobe solutions.
 
 1. Log in to [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) using your AdobeID credentials.
 2. Click the tag property that you intend to implement on your site.
@@ -41,37 +42,37 @@ Despite all the changes and configurations made so far, no code has actually bee
 8. Navigate to **[!UICONTROL Environments]**, then click the install icon to the right of your development environment. This action brings up the Web Install Instructions modal window again.
 9. Copy the code block(s) and provide them to your organization's website owners.
 
-## Install tags on your website's development environment
+## Install tags | your website's development environment
 
-If you control your website's code, implement each block of code in their respective location:
+* if you control your website's code -> implement EACH block of code | their respective location
+  * main tag -- belongs to -- your site's `<head>` tag 
+  * if you want to load tags SYNCHRONOUSLY (toggling Web Install Instructions's **[!UICONTROL Load Library Asynchronously]** option) -> include a second code block | your site's BELOW `</body>`
 
-* The main tag belongs in the `<head>` tag on your site.
-* If you choose to load tags synchronously, you must also include a second code block just below the closing `</body>` tag on your site. You can choose to load library tags synchronously by toggling the **[!UICONTROL Load Library Asynchronously]** option in the Web Install Instructions.
-
-Tag code is typically placed in the site's overarching template. A blank page only containing implementation code would look like the following:
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example page</title>
-  <script src="//assets.adobedtm.com/launch-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-development.min.js"></script>
-</head>
-<body>
-   <p>This is a test page.</p>
-   <!-- Only include this extra code if you load tags synchronously -->
-   <script type="text/javascript">_satellite.pageBottom();</script>
-</body>
-</html>
-```
+* Tag code -- is typically -- placed | site's overarching template
+* _Example:_ blank page / ONLY contains implementation code
+    ```html
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Example page</title>
+      <script src="//assets.adobedtm.com/launch-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-development.min.js"></script>
+    </head>
+    <body>
+       <p>This is a test page.</p>
+       <!-- Only include this extra code if you load tags synchronously -->
+       <script type="text/javascript">_satellite.pageBottom();</script>
+    </body>
+    </html>
+    ```
 
 ## Troubleshooting
 
 **Attempting to build fails.**
 
-A common reason is because elements already exist in other libraries pushed to staging or production. When initially creating libraries, ensure only changed resources are added to the library.
+A common reason is because elements already exist in other libraries pushed to staging or production. 
+When initially creating libraries, ensure only changed resources are added to the library.
 
 ## Next Steps
 
-[Validate your Analytics implementation and publish to production](validate-publish-prod.md): Start getting value out of Adobe Analytics.
+[Validate your Analytics implementation & publish | production](validate-publish-prod.md)
