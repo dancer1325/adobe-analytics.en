@@ -4,9 +4,7 @@ description: Glossary for Adobe Analytics, defining common terms used.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
 ---
-# Terms used in Adobe Analytics
-
-Use this glossary to understand the context of many terms Adobe Analytics uses.
+# Terms used | Adobe Analytics
 
 * **Activity map:** A browser plug-in that shows what areas on your site were clicked on the most. See [Activity Map](/help/analyze/activity-map/overview.md) in the Analyze user guide.
 * **Admin console:** Can refer to:
@@ -62,21 +60,30 @@ Use this glossary to understand the context of many terms Adobe Analytics uses.
   * Custom Insight, a historical name for custom traffic variable.
 * **KPI:** Abbreviation for key performance indicator. Metrics that help a business understand how their site is performing. Each organization has different KPI's that measure different aspects of their business. See [Create a solution design document](/help/implement/prepare/solution-design.md) in the Implement user guide.
 * **Latency:** The delay between when data is collected and when it is available in reports. Typical latency in a report suite is 30-90 minutes. See [Latency](/help/technotes/latency.md) in the Technotes user guide.
-* **Launch:** No longer used as a term. The shortened former name of tags in Adobe Experience Platform, Adobe's current implementation solution. See [Tags overview](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) in the Adobe Experience Platform user guide.
+* **Launch:** 
+  * ❌NO longer used ❌
+  * -- replaced by -- Adobe Experience Platform's tags
+    * [Adobe Experience Platform user guide's tags overview](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 * **List prop:** A setting that converts a typical traffic variable to support multiple values in the same hit. Any custom traffic variable can become a list prop if the setting is enabled. See [prop](../implement/vars/page-vars/prop.md) in the Implement user guide.
 * **List var:** A distinct variable separate to conversion variables. List vars support multiple values in the same hit, and variable values are preserved in a visit, similar to conversion variables. Only three list vars are available to an organization. See [list](/help/implement/vars/page-vars/list.md) in the Implement user guide.
 * **Login company:** A collection of report suites used by your organization. Some organizations have multiple login companies that apply to different parts of their organization.
 * **Marketing channel:** A feature in Adobe Analytics that categorizes hits by how they arrived to your site. The logic used to categorize hits can be customized using Marketing channel processing rules. See [Getting started with Marketing Channels](/help/components/c-marketing-channels/c-getting-started-mchannel.md) in the Components user guide.
 * **Metric:** A component type that contains quantitative data. Metric values typically contain numbers, such as Page Views, Visits, and Revenue. A dimension is typically its counterpart.
 * **Mobile Services:** A retired Adobe product that brought together mobile marketing capabilities for mobile applications from across the Adobe Experience Cloud, letting you understand and improve user engagement with your applications.
-* **Multi-suite tagging:** The practice of sending the same hit to multiple report suites. With the introduction to virtual report suites, this practice is largely no longer necessary. Most multi-suite tagging efforts help accommodate a global report suite.
+* **Multi-suite tagging:** 
+  * The practice of sending the same hit to multiple report suites.
+  * With the introduction to virtual report suites, this practice is largely no longer necessary. 
+  * Most multi-suite tagging efforts help accommodate a global report suite.
 * **Normalization:** A way to organize a visualization that takes all metrics and forces them to equal proportions, allowing an easier comparison of trends.
 * **Occurrences:** A type of metric that shows how many hits a dimension item was set or persisted. See the [Occurrences](/help/components/metrics/occurrences.md) metric in the Components user guide.
 * **Omniture:** No longer used as a term. The organization that owned Adobe Analytics prior to being acquired by Adobe in 2009.
 * **Pathing:** See Flow.
 * **Page view:** A type of hit that increments page views. See the [Page views](/help/components/metrics/page-views.md) metric in the Components user guide. See also Hit.
 * **Persistence:** An abstract concept for conversion variables that allows the linking between a variable value and event happening on separate hits. See also Expiration.
-* **Primary server call:** Alternate name for image request or hit, used mostly in context of multi-suite tagging and billing. When the same hit is sent to multiple report suites, the first report suite is a primary server call while the rest are secondary server calls. This rule applies to all hit types, including page view and link tracking. See also Secondary server calls.
+* **Primary server call:** 
+  * Alternate name for image request or hit, used mostly in context of multi-suite tagging and billing.
+  * When the same hit is sent to multiple report suites, the first report suite is a primary server call while the rest are secondary server calls. 
+  * This rule applies to all hit types, including page view and link tracking. See also Secondary server calls.
 * **Processing rules:** Can refer to:
   * Processing rules, a way to alter data collection using certain rules in the Admin Console. See [Processing rules](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) in the Admin user guide.
   * Marketing channel processing rules, a set of rules that determines which marketing channel a hit belongs in. See [Marketing channel processing rules](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md) in the Admin user guide.
@@ -91,7 +98,9 @@ Use this glossary to understand the context of many terms Adobe Analytics uses.
 * **s.t():** The name of the function in an AppMeasurement library that sends a page view image request. Some AppMeasurement libraries use `s.track()` instead. See [t](../implement/vars/functions/t-method.md) in the Implement user guide.
 * **s<span>.</span>tl():** The name of the function in an AppMeasurement library that sends a link tracking image request. Some AppMeasurement libraries use `s.trackLink()` instead. See [tl](../implement/vars/functions/tl-method.md) in the Implement user guide.
 * **s_code.js:** The name of the JavaScript file used in historical versions of Adobe Analytics. The current name of the JavaScript file used is AppMeasurement.js.
-* **Satellite:** No longer used as a term. The former product name for Dynamic Tag Management.
+* **Satellite:**
+  * ❌== NO longer used❌
+    * == OLD Dynamic Tag Management
 * **Secondary server call:** Alternate name for image request or hit, used mostly in context of multi-suite tagging and billing. When the same hit is sent to multiple report suites, all report suites after the first listed are secondary server calls. See also Primary server calls.
 * **Segment:** Allows you to focus on specific subset of your data. See [Segmentation](/help/components/segmentation/seg-overview.md) in the Components user guide.
 * **Segment container:** The part of a segment that determines how much data to bring in. Containers can be based on page view, visit, or visitor. See [Segmentation](/help/components/segmentation/seg-overview.md) in the Components user guide.
