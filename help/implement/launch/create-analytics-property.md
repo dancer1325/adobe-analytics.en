@@ -7,14 +7,18 @@ role: Admin, Developer
 ---
 # Create an Adobe Analytics tag property
 
-Tags in Adobe Experience Platform lets you integrate Experience Cloud solutions on your website (including Analytics). This page outlines specifically how a tag admin can get a basic Adobe Analytics implementation configured correctly.
+* goal
+  * how to configure properly a tag admin / get a basic Adobe Analytics implementation
+* Adobe Experience Platform's Tags
+  * allows you
+    * integrating Experience Cloud solutions | your website (ALSO Analytics)
 
 ## Prerequisites
 
-[Create a report suite](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Create a silo for Analytics data to be collected.
+* [Create a report suite](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
 
 ## Create a tag property and install vital extensions
-
+* TODO:
 Properties are overarching containers you use to manage tags. Extensions let you install product-specific tags and configure them.
 
 1. Log in to [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) using your AdobeID credentials.
